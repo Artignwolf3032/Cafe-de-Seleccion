@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Métodos de Pago</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://tse3.mm.bing.net/th?id=OIP.lBlJxKqRss0mAjTE7JH0dQHaE7&pid=Api&P=0&h=180.png");
+            background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir toda la pantalla */
+        }
+
+        .h2 {
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        .payment-methods {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .payment-cards {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .visa {
+            border: 2px solid #1a237e;
+        }
+
+        .mastercard {
+            border: 2px solid #d32f2f;
+        }
+
+        .paypal {
+            border: 2px solid #004d40;
+        }
+
+        /* Define un estilo para los productos */
+        .producto {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            background-color: #f0f0f0;
+            cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el producto */
+        }
+
+        .seleccionado {
+            background-color: #00cc00; /* Cambia el color de fondo del producto seleccionado */
+        }
+
+        #botonPagar {
+            display: none; /* El botón de pagar se muestra solo cuando se seleccionan productos */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="payment-methods">
+        <h2>Métodos de Pago</h2>
+        <div class="payment-cards">
+            <a href="https://www.visa.com" class="card visa">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.A3nmHV9x3EVEUdP6bRp4SQHaE0&pid=Api&P=0&h=180" alt="Visa">
+                <p>Visa</p>
+            </a>
+            <a href="https://www.mastercard.com" class="card mastercard">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.FtvETY1E_WFX9yKpZ057BwHaE1&pid=Api&P=0&h=180" alt="Mastercard">
+                <p>Mastercard</p>
+            </a>
+            <a href="https://www.paypal.com/myaccount/money/cards/new/manual" class="card paypal">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.NkcTud8SCkk67rFHxUP71QHaHW&pid=Api&P=0&h=180" alt="PayPal">
+                <p>PayPal</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Resto de tu código JavaScript -->
+</body>
+
+</html>
